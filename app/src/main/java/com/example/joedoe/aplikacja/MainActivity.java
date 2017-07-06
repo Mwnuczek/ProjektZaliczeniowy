@@ -78,8 +78,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 yMagnetyczne = String.format("%.0f", wartMagnetometr[1]);
                 zMagnetyczne = String.format("%.0f", wartMagnetometr[2]);
 
-                pomiary = "Akcelometr: X: "+xAkcelometr+" Y: "+yAkcelometr+" Z: "+zAkcelometr +"\nMagnetometr: X:"+xMagnetyczne+" Y: "+yMagnetyczne+" Z: "+zMagnetyczne
-                        + "\nSwiatlo: " + wartSwiatla[0];
+                pomiary = "Odczyt:\nMagnetometr: X:"+xMagnetyczne+" Y: "+yMagnetyczne+" Z: "+zMagnetyczne +"\n"  +
+                        "Akcelometr: X: "+xAkcelometr+" Y: "+yAkcelometr+" Z: "+zAkcelometr  +"\n"+
+                        "Swiatlo: " + wartSwiatla[0];
 
                 FileOutputStream fos;
                 try {
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                     e.printStackTrace();
                 }
 
-                Toast.makeText(getApplicationContext(), "Wczytano", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Odczytano", Toast.LENGTH_LONG).show();
 
                 TextView tv = (TextView)findViewById(R.id.textOdczyt);
                 textOdczyt.setText(text);
