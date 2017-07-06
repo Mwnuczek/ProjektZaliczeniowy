@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textAkcelometr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:text="Akcelometr: " />
+
+    <TextView
+        android:id="@+id/textMagnetyczne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:text="Pole Magnetyczne: " />
+
+    <TextView
+        android:id="@+id/textOswietlenie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:text="Oswietlenie: " />
+
+
+    <TextView
+        android:id="@+id/textOdczyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:text="Odczyt: " />
+
+    <Button
+        android:id="@+id/buttonZapis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz" />
+
+    <Button
+        android:id="@+id/buttonOdczyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Odczytaj" />
+</LinearLayout>
